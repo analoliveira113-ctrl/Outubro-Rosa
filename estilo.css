@@ -1,0 +1,73 @@
+@import url('https://fonts.cdnfonts.com/css/just-another-hand');
+               
+h1{
+    font-family: 'Just another hand', sans-serif;
+    text-align: center;
+    color: #FF1F6A                                     
+}     
+
+.barra {
+  text-align: center;
+  background-color: #FF1F6A;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+}
+body{
+    font-size: x-large;
+    background-color: #ffffff;
+    margin: 0;
+    
+
+}
+.inicio{
+    width: 100%;
+}
+.branco {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+#divbusca{
+
+  background-color:#DD90A5;
+  border-radius:15px;
+  width:95%;
+
+}
+
+#txtBusca{
+  float:left;
+  background-color: #DD90A5;
+  padding-left: 20px;
+  font-style:italic;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width: 90%;
+  border-radius: 15px;
+}
+
+#btnBusca{
+    width: 20px;
+    height: 20px;
+}
+
+@import url('https://fonts.cdnfonts.com/css/actor');
+div{
+    width: 75%;
+    padding: 5%;
+    background-color: #E2BFC8;
+    margin: 0 auto;
+    border-radius: 15px;
+    color: #ffffff;
+    font-family: 'Actor', sans-serif;
+    
+}
+
+.rosa{
+    color: #e75480;
+    font-family: 'Actor', sans-serif;
+}
