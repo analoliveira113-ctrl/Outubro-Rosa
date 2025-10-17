@@ -6,28 +6,72 @@ h1{
     color: #FF1F6A                                     
 }     
 
-.barra {
+/*.barra {
   text-align: center;
   background-color: #FF1F6A;
-  position: fixed;
+  position: ;
   top: 0;
   left: 0;
   right: 0;
-  height: 35px;
+  height: 37px;
+}*/
+
+header {
+  width: 100%;
+  height: 37px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  background: #FF1F6A;
+  text-align: center;    
+  font-size: 2.9vw;
+  font-family: 'Just another hand', sans-serif;
+  
 }
+
 body{
     font-size: x-large;
     background-color: #ffffff;
     margin: 0;
-    
-
 }
+
+p{
+    margin-bottom: 8%;
+}
+
+
 .inicio{
     width: 100%;
 }
-.branco {
+
+header .branco {
   color: #ffffff;
-  font-size: 32px;
+  font-size: 30px;
+  position: fixed;
+ 
+
+}
+
+.teste{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: max-content;
+}
+
+#txtBusca{
+ 
+  /* float:left; */
+  background-color: transparent;
+  /* padding-left: 20px; */
+  font-style:italic;
+  font-size:18px;
+  border:none;
+  /* height:32px; */
+  /* width: auto; */
+  border-radius: 15px;
+  /* align-items: center; */
 }
 
 #divbusca{
@@ -35,25 +79,16 @@ body{
   background-color:#DD90A5;
   border-radius:15px;
   width:95%;
-
+  height: 25px;
 }
 
-#txtBusca{
-  float:left;
-  background-color: #DD90A5;
-  padding-left: 20px;
-  font-style:italic;
-  font-size:18px;
-  border:none;
-  height:32px;
-  width: 90%;
-  border-radius: 15px;
-}
 
-#btnBusca{
+
+
+/* #btnBusca{
     width: 20px;
     height: 20px;
-}
+} */
 
 @import url('https://fonts.cdnfonts.com/css/actor');
 div{
@@ -64,10 +99,277 @@ div{
     border-radius: 15px;
     color: #ffffff;
     font-family: 'Actor', sans-serif;
-    
 }
+
+.div-secundaria{
+    width: 75%;
+    padding: 5%;
+    background-color: #DD90A5; /* cor diferente */
+    margin: 0 auto;
+    border-radius: 15px;
+    color: #ffffff;
+    font-family: 'Actor', sans-serif;
+}
+
 
 .rosa{
     color: #e75480;
     font-family: 'Actor', sans-serif;
 }
+
+.rosaclaro{
+  color: #DD90A5;
+  font-family: 'Just another hand', sans-serif;
+}
+
+.rosaclaro2{
+  color: #DD90A5;
+  font-family: 'Actor', sans-serif;
+}
+
+.img-centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+/*AJUDA A RESPONSIVIDADE*/
+@media (max-width: 600px) {
+  div, .div-secundaria {
+    width: 98%;
+    padding: 2%;
+  }
+  .branco {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  body {
+    font-size: medium;
+  }
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    box-shadow: unset;
+    padding: unset;
+    background-color: unset;
+
+}
+
+.card{
+    background-color: #E2BFC8;
+    color: #FF1F6A;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+    .card:hover {
+    transform: scale(1.05);
+    } 
+
+.card img {
+    width: 70px;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+/*arrumando o que antes era imagem*/
+
+.bloco {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* espaço entre os elementos */
+  background-color: #ffffff;
+  padding: 30px 50px;
+  border-radius: 4px;
+}
+
+/* Texto da esquerda */
+.texto-esquerda h2 {
+  color: #FF1F6A;
+  font-size: 28px;
+  text-align: right;
+  line-height: 1.2;
+  margin: 0;
+  font-family: 'Just another hand', sans-serif;
+}
+
+.linha-vertical {
+  height: 10px;    /* altura da linha */
+  width: auto;      /* mantém a proporção da imagem */
+}
+
+/* Texto da direita */
+.texto-direita p {
+  color: #DD90A5;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.4;
+}
+.texto-esquerda,
+.texto-direita {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+
+
+
+
+/* Fundo branco geral */
+body, .info-section, .section, .title-container, .title {
+  background-color: #fff; /* fundo branco para todas essas áreas */
+  margin: 0;
+  padding: 0;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.info-section .section {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  background-color: transparent; /* transparente para não gerar faixa rosa */
+}
+
+.info-section .title-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 180px;
+  background-color: transparent; /* transparente para evitar fundo rosa */
+}
+
+.info-section .title {
+  font-size: 1.5em;
+  color: #FF1F6A;
+  font-family: 'Just another hand', sans-serif;
+  font-weight: bold;
+  background-color: transparent; /* transparente para evitar faixa rosa */
+}
+
+.linha-vertical {
+  width: 1px;                /* espessura da linha */
+  height: 480px;             /* altura da linha */
+  background-color: #e5007e; /* cor da linha (igual à imagem) */
+  border-radius: 2px;        /* pontas suaves (opcional) */
+}
+
+/* Aqui é o único fundo rosa */
+.info-section .content-box {
+  background-color: #f5a7b8;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  color: #fff;
+  line-height: 1.5;
+  margin: 0; /* elimina margens extras */
+}
+
+
+/*PASSO A PASSO*/
+/* Fundo branco geral */
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 20px; /* se quiser espaçamento */
+  font-family: Arial, sans-serif;
+  color: #555;
+}
+
+.steps {
+  background-color: #fff; /* fundo branco */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.number {
+  background-color: #d993a8; /* rosa círculo */
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  flex-shrink: 0;
+}
+
+.text-box {
+  background-color: #e6b8c5; /* rosa claro caixa texto */
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: white;
+  flex: 1;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: #e91e63; /* rosa forte para destaque */
+  font-weight: 600;
+}
+body, .steps, .step {
+  background-color: #fff; /* ou transparent */
+}
+
+.text-box {
+  background-color: #e6b8c5; /* rosa claro só aqui */
+}
+
+/*imagem mulheres de peito*/
+.img-centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+/*texto centro mulheres de peito*/
+.texto-centro {
+  text-align: center;
+}
+
+/*linha rosa horizontal*/
+.linha-rosa {
+  border: none;              /* remove a borda padrão do hr */
+  height: 2px;               /* define a espessura da linha */
+  width: 80%;                /* controla o comprimento da linha */
+  background-color: #e5007e; /* cor semelhante à da imagem */
+  margin: 40px auto;         /* centraliza e adiciona espaçamento */
+  border-radius: 2px;        /* opcional: deixa as pontas suaves */
+}
+
+
+/*meio que era imagem*/
