@@ -1,21 +1,14 @@
 @import url('https://fonts.cdnfonts.com/css/just-another-hand');
-               
+@import url('https://fonts.cdnfonts.com/css/actor');
+
+/* configuração h1 */
 h1{
     font-family: 'Just another hand', sans-serif;
     text-align: center;
     color: #FF1F6A                                     
 }     
 
-/*.barra {
-  text-align: center;
-  background-color: #FF1F6A;
-  position: ;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 37px;
-}*/
-
+/* código barra fiz em cima */
 header {
   width: 100%;
   height: 37px;
@@ -40,11 +33,12 @@ p{
     margin-bottom: 8%;
 }
 
-
+/* imagem inicio */
 .inicio{
     width: 100%;
 }
 
+/* comando texto branco na barra fixa */
 header .branco {
   color: #ffffff;
   font-size: 30px;
@@ -53,6 +47,7 @@ header .branco {
 
 }
 
+/* comando barra de pesquisa */
 .teste{
   display: flex;
   flex-direction: column;
@@ -60,37 +55,48 @@ header .branco {
   width: max-content;
 }
 
-#txtBusca{
- 
-  /* float:left; */
-  background-color: transparent;
-  /* padding-left: 20px; */
-  font-style:italic;
-  font-size:18px;
-  border:none;
-  /* height:32px; */
-  /* width: auto; */
+#teste {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 500px;
+  background-color: #DD90A5;
   border-radius: 15px;
-  /* align-items: center; */
+  padding: 5px;
 }
 
-#divbusca{
+#txtBusca {
+  background-color: transparent;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+  padding-right: 30px; /* Espaço para a lupa */
+  color: #ffffff;
+}
 
-  background-color:#DD90A5;
-  border-radius:15px;
-  width:95%;
-  height: 25px;
+.btnBusca {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #teste {
+    width: 90%;
+  }
 }
 
 
-
-
-/* #btnBusca{
-    width: 20px;
-    height: 20px;
-} */
-
-@import url('https://fonts.cdnfonts.com/css/actor');
+/* comando div rosa claro */
 div{
     width: 75%;
     padding: 5%;
@@ -101,6 +107,7 @@ div{
     font-family: 'Actor', sans-serif;
 }
 
+/* comando div rosa escuro */
 .div-secundaria{
     width: 75%;
     padding: 5%;
@@ -112,6 +119,7 @@ div{
 }
 
 
+/* comando cores de texto diferentes */
 .rosa{
     color: #e75480;
     font-family: 'Actor', sans-serif;
@@ -127,6 +135,7 @@ div{
   font-family: 'Actor', sans-serif;
 }
 
+/* colocar imagens no centro */
 .img-centro {
     display: block;
     margin-left: auto;
@@ -134,24 +143,8 @@ div{
     max-width: 100%;
 }
 
-/*AJUDA A RESPONSIVIDADE*/
-@media (max-width: 600px) {
-  div, .div-secundaria {
-    width: 98%;
-    padding: 2%;
-  }
-  .branco {
-    font-size: 22px;
-  }
-  h1 {
-    font-size: 28px;
-  }
-  body {
-    font-size: medium;
-  }
-}
 
-
+/* comandos parte com animação igual do setembro amarelo */
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -187,7 +180,8 @@ div{
     margin-bottom: 15px;
 }
 
-/*arrumando o que antes era imagem*/
+
+/*arrumando o que antes era imagem (quais os principais sintomas)*/
 
 .bloco {
   display: flex;
@@ -209,8 +203,8 @@ div{
 }
 
 .linha-vertical {
-  height: 10px;    /* altura da linha */
-  width: auto;      /* mantém a proporção da imagem */
+  height: 10px;    
+  width: auto;     
 }
 
 /* Texto da direita */
@@ -220,6 +214,8 @@ div{
   margin: 0;
   line-height: 1.4;
 }
+
+/* comando que faz o fundo ficar branco (ficava rosa claro antes) */
 .texto-esquerda,
 .texto-direita {
   background-color: transparent !important;
@@ -229,8 +225,7 @@ div{
 
 
 
-
-
+/* parte do conheça seu corpo e por que fazer mamografia */
 /* Fundo branco geral */
 body, .info-section, .section, .title-container, .title {
   background-color: #fff; /* fundo branco para todas essas áreas */
@@ -270,10 +265,10 @@ body, .info-section, .section, .title-container, .title {
 }
 
 .linha-vertical {
-  width: 1px;                /* espessura da linha */
-  height: 480px;             /* altura da linha */
-  background-color: #e5007e; /* cor da linha (igual à imagem) */
-  border-radius: 2px;        /* pontas suaves (opcional) */
+  width: 1px;               
+  height: 480px;            
+  background-color: #FF1F6A; 
+  border-radius: 2px;       
 }
 
 /* Aqui é o único fundo rosa */
@@ -287,14 +282,13 @@ body, .info-section, .section, .title-container, .title {
   margin: 0; /* elimina margens extras */
 }
 
-
-/*PASSO A PASSO*/
+/* parte do passo a passo */
 /* Fundo branco geral */
 body {
   background-color: #fff;
   margin: 0;
-  padding: 20px; /* se quiser espaçamento */
-  font-family: Arial, sans-serif;
+  padding: 20px; 
+  font-family: 'Actor', sans-serif;
   color: #555;
 }
 
@@ -337,7 +331,7 @@ body {
 }
 
 .highlight {
-  color: #e91e63; /* rosa forte para destaque */
+  color: #FF1F6A; /* rosa forte para destaque */
   font-weight: 600;
 }
 body, .steps, .step {
@@ -363,13 +357,31 @@ body, .steps, .step {
 
 /*linha rosa horizontal*/
 .linha-rosa {
-  border: none;              /* remove a borda padrão do hr */
-  height: 2px;               /* define a espessura da linha */
-  width: 80%;                /* controla o comprimento da linha */
-  background-color: #e5007e; /* cor semelhante à da imagem */
-  margin: 40px auto;         /* centraliza e adiciona espaçamento */
-  border-radius: 2px;        /* opcional: deixa as pontas suaves */
+  border: none;             
+  height: 2px;              
+  width: 80%;               
+  background-color: #FF1F6A; 
+  margin: 40px auto;        
+  border-radius: 2px;       
 }
 
 
-/*meio que era imagem*/
+
+
+
+/*AJUDA A RESPONSIVIDADE*/
+@media (max-width: 600px) {
+  div, .div-secundaria {
+    width: 98%;
+    padding: 2%;
+  }
+  .branco {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  body {
+    font-size: medium;
+  }
+}
