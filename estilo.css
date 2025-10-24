@@ -8,6 +8,12 @@ h1{
     color: #FF1F6A                                     
 }     
 
+h2{
+  font-family: 'Just another hand', sans-serif;
+    text-align: center;
+    color: #ffffff 
+}
+
 /* código barra fiz em cima */
 header {
   width: 100%;
